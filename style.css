@@ -105,6 +105,7 @@ main {
 .main-top{
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap-reverse;
 }
 #location, #popular{
     background-color: #F2F2F2;
