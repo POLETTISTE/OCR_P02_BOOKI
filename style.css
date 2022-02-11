@@ -1,19 +1,164 @@
 /* GLOBAL */
+
 a, a:hover, a:visited {
     text-decoration:none;
     color:black;
 }
 
-
 ul {
     list-style-type: none;
 }
+/* HEADER */
 
+header {
+    width: 95%;
+    margin:auto;
+}
 /* NAV */
 
 nav{
     display:flex;
+    justify-content: space-between;
 }
 
+#logo{
+    width:130px;
+    height:auto;
+    margin-left: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    margin-right:50px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border:2px solid red;
+    height:50px;
+    width:450px;
+}
+/* FORM */
+
+.fa-location-dot {
+    text-align: center;
+    background-color: #F2F2F2;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    padding:5px;
+}
+
+label {
+    background-color: #0065FC;
+    color:white;
+}
+.search-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.search-filters h2{
+    margin:0;
+    border-style:none;
+}
+.search-filters-item {
+    display: flex;
+    border:2px solid red;
+    width:auto;
+    height:30px;
+    justify-content:flex-start;
+    align-items:center;
+    border:1px solid grey;
+    border-radius: 15px;;
+
+}
+
+.search-filters-item i {
+    text-align: center;
+    background-color: #DFECFF;
+    color:#1365FC;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right:15px;
+}
+
+.search-filters-item p {
+    margin-right: 10px;
+}
+
+/* MAIN */
+main {
+    width: 95%;
+    margin:auto;
+}
+.main-top{
+    display: flex;
+    justify-content: space-between;
+}
+#location, #popular{
+    background-color: #F2F2F2;
+}
+
+#location {
+    width:780px;
+}
+
+.location-card img {
+    width:250px;
+    height:125px;
+}
+
+.location-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#popular {
+    width:380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.popular-intro{
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+}
+
+.popular-intro i{
+    text-align: center;
+    width:50px;
+    padding-top:30px;
+}
+
+.popular-card{
+    display: flex;
+    justify-content: space-between;
+    width:350px;
+    background-color: white;;
+}
+
+.popular-card img {
+    width:150px;
+    height:150px;
+    padding-right:20px;
+}
+
+.popular-card div{
+    width:180px;
+}
 /* FOOTER */
 
