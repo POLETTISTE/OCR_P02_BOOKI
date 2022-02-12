@@ -1,0 +1,67 @@
+/* MAIN */
+main {
+    width: 95%;
+    margin:auto;
+}
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap-reverse;
+}
+#location, #popular{
+    background-color: #F2F2F2;
+}
+/* HEBERGEMENTS / LOCATIONS */
+
+#location {
+    width:780px;
+}
+
+.location-card img {
+    width:250px;
+    height:125px;
+}
+
+.location-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* POPULAIRES / POPULAR */
+
+#popular {
+    width:380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.popular-intro{
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+}
+
+.popular-intro i{
+    text-align: center;
+    width:50px;
+    padding-top:30px;
+}
+
+.popular-card{
+    display: flex;
+    justify-content: space-between;
+    width:350px;
+    background-color: white;;
+}
+
+.popular-card img {
+    width:150px;
+    height:150px;
+    padding-right:20px;
+}
+
+.popular-card div{
+    width:180px;
+}

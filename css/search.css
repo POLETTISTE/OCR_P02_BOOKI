@@ -1,0 +1,149 @@
+/* SEARCH-BAR */
+.search-bar{
+    width: 100%;
+    margin: 0;
+}
+
+.search-bar form{
+    display: flex;
+    margin: 0;
+    margin-bottom:30px;
+}
+
+.fa-location-dot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #F2F2F2;
+    height:50px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    width:50px;
+    padding:10px;
+}
+
+.search-bar input {
+    border: 1px solid #F2F2F2;
+    padding-left: 14px ;
+
+}
+
+.search-bar input::placeholder {
+    color:black;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.search-bar label.Recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    color:white;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    width:120px;
+    padding:10px;
+    cursor:pointer;
+}
+
+.search-bar label.Loupe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+label.Loupe i {
+    display: none;
+    background-color: #0065FC;
+    color:white;
+    height:50px;
+    width:50px;
+    padding:10px;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+@media all and (max-width: 768px)
+{
+    label.Loupe i{
+        display:inline;
+    }
+
+    .search-bar label.Recherche {
+        display: none;
+    }
+
+}
+
+/* SEARCH-FILTERS */
+
+.filters {
+    display: flex;
+    flex-direction: row;;
+}
+
+@media all and (max-width: 768px)
+{
+    .filters {
+        flex-direction: column;
+    }
+}
+
+
+.filters h2{
+    margin-right:30px;
+    border-style:none;
+}
+.search-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.search-filters a:hover {
+    background-color: #0065FC;
+    color:white;
+}
+
+.search-filters-item {
+    display: flex;
+    height:50px;
+    justify-content:flex-start;
+    align-items:center;
+    border:1px solid #F2F2F2;
+    border-left:none;
+    border-radius: 30px;
+    margin-right: 20px;
+    padding-right:20px;
+    margin-bottom: 20px;;
+}
+
+.search-filters-item .icone{
+    width:50px;
+    height:50px;
+}
+
+.search p {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.search i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #F2F2F2;
+    color:#1365FC;
+    width:30px;
+    height: 30px;
+    border-radius: 50%; 
+    margin-right:10px;
+}
