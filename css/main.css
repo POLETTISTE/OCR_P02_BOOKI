@@ -15,6 +15,7 @@ main {
     background-color: #F2F2F2;
     padding: 30px;
     border-radius: 30px;
+    margin-bottom: 50px;
 
 }
 
@@ -22,10 +23,15 @@ main {
 
 #location {
     width: 1000px;
-    height: 700px;
 }
+
+.location-title {
+    margin-bottom:30px;
+    margin-left:30px;
+}
+
 .location-grid {
-    height: 500px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -41,6 +47,7 @@ main {
     height:130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit:cover;
 }
 
 .location-card-description {
@@ -62,13 +69,22 @@ main {
 .location-card-stars {
     margin-left:15px;
 }
+.location-more {
+    margin-top: 40px;
+    margin-left:30px;
+}
+
 /* POPULAR */
 
 #popular {
-    width:400px;
-    height:700px;
+    width:450px;
 }
-
+.popular-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .popular-title {
     display:flex;
     justify-content: space-between;
@@ -89,6 +105,7 @@ main {
 .popular-card a{
     display: flex;
     align-items: space-evenly;
+    justify-content: center;
     
 }
 .img-popular {
@@ -96,6 +113,7 @@ main {
     height:150px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit:cover;
 
 }
 .popular-card-description h3{
@@ -112,4 +130,62 @@ main {
 
 .popular-card-stars {
     margin-left:15px;
+}
+
+/* ACTIVITIES */
+#activities {
+    padding:30px;
+}
+.activities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activities-card-large {
+    width:330px;
+    height:550px;
+    margin:0px;
+    padding: 0px;
+    box-shadow: 0px 5px 6px rgb(150,150,150);
+    border-radius: 20px;
+
+}
+
+
+.activities-card-large img {
+    width: 330px;
+    height: 500px;
+    object-fit:cover;
+    object-position: 50% 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.activities-card-medium-item {
+    width:330px;
+    height:260px;
+    margin:0px;
+    margin-bottom: 30px;
+    padding: 0px;
+    box-shadow: 0px 5px 6px rgb(150,150,150);
+    border-radius: 20px;
+}
+
+
+.activities-card-medium-item img {
+    width: 330px;
+    height: 210px;
+    object-fit:cover;
+    object-position: 50% 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+
+}
+
+.title-activity{
+    margin:0;
+    margin-top:10px;
+    margin-left: 20px;
 }

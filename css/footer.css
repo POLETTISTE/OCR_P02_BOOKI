@@ -1,0 +1,13 @@
+footer {
+    width:100%;
+    background-color: #F2F2F2;
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left:70px;
+}
+
+.footer-list {
+    width:510px;
+}
