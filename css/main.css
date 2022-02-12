@@ -1,67 +1,115 @@
 /* MAIN */
 main {
     width: 95%;
-    margin:auto;
+    margin:0 auto;
+
 }
-.main-top{
+
+#location-popular {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap-reverse;
+    flex-wrap: wrap-reverse;
 }
-#location, #popular{
+
+#location, #popular {
     background-color: #F2F2F2;
+    padding: 30px;
+    border-radius: 30px;
+
 }
-/* HEBERGEMENTS / LOCATIONS */
+
+/* LOCATIONS */
 
 #location {
-    width:780px;
+    width: 1000px;
+    height: 700px;
 }
-
-.location-card img {
-    width:250px;
-    height:125px;
-}
-
 .location-grid {
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:center;
 }
 
-/* POPULAIRES / POPULAR */
+.location-card {
+    margin-bottom:25px;
+}
 
-#popular {
-    width:380px;
+.img-location {
+    width:260px;
+    height:130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.location-card-description {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:center;
+    margin-left:15px;
+}
+.location-card-description p{
+    margin:0;
+    margin-bottom:5px;
+}
+.location-card-description h3{
+    margin:0;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
-.popular-intro{
-    display: flex;
+.location-card-stars {
+    margin-left:15px;
+}
+/* POPULAR */
+
+#popular {
+    width:400px;
+    height:700px;
+}
+
+.popular-title {
+    display:flex;
     justify-content: space-between;
-    width:300px;
+    margin-bottom:10px;
 }
 
-.popular-intro i{
-    text-align: center;
-    width:50px;
-    padding-top:30px;
-}
-
-.popular-card{
+.fa-chart-line {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.popular-card {
     width:350px;
-    background-color: white;;
+    margin-bottom: 30px;
 }
-
-.popular-card img {
+.popular-card a{
+    display: flex;
+    align-items: space-evenly;
+    
+}
+.img-popular {
     width:150px;
     height:150px;
-    padding-right:20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.popular-card-description h3{
+    margin:0;
+    margin-top:10px;
+    margin-bottom: 12px;
+    margin-left: 15px;
+}
+.popular-card-description p{
+    margin:0;
+    margin-left:15px;
+    margin-bottom: 50px;
 }
 
-.popular-card div{
-    width:180px;
+.popular-card-stars {
+    margin-left:15px;
 }

@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 95%;
+    margin:auto 0;
     height:80px;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -59,7 +60,7 @@ nav a:hover {
 
     nav a {
         border-top:none;
-        border-bottom: 4px solid transparent;
+        border-bottom: 4px solid #F2F2F2;
         width:100%;
         padding-bottom: 20px;
     }
@@ -68,5 +69,4 @@ nav a:hover {
         border-top:none;
         border-bottom: 4px solid #0065FC ;
     }
-
 }
