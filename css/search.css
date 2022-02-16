@@ -1,22 +1,9 @@
 /* SEARCH-BAR */
+
+
 .search{
     width: 95%;
     margin:0 auto;
-}
-@media all and (max-width: 767px) {
-    .search{
-        margin-top:40px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .search h1{
-        margin-bottom: 15px;
-    }
-
-    .search p{
-        margin-bottom: 40px;
-    }
 }
 
 .search-bar{
@@ -27,9 +14,27 @@
     display:flex;
     align-items: center;
     justify-content: flex-start;
-
+    
 }
 
+@media all and (max-width: 767px) {
+    .search{
+        margin-top:30px;
+        width:90%;
+    }
+
+    .search p{
+        margin-top:20px;
+        margin-bottom: 40px;
+    }
+
+    .search-bar{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* FORM */
 .search-bar form{
     display: flex;
     margin: 0;
@@ -67,7 +72,7 @@
     color:black;
     font-size: 15px;
     font-weight: 700;
-
+    
 }
 
 .search-bar label.Recherche {
@@ -83,7 +88,7 @@
     width:100px;
     padding:8px;
     cursor:pointer;
-
+    
 }
 
 .search-bar label.Loupe {
@@ -108,15 +113,29 @@ label.Loupe i {
     border-color: #0065FC;
 }
 
-@media all and (max-width: 768px)
+@media all and (max-width: 767px)
 {
-    label.Loupe i{
-        display:flex;
+    .fa-location-dot{
+        font-size:20px;
+        width:50px;
+        height:50px;
+        padding:10px;
     }
 
-    .search-bar label.Recherche {
-        display: none;
+    #Recherche{
+        width:80%;
     }
+    
+    .search-bar label.Recherche{
+        display: none;
+    }    
+
+    label.Loupe i{
+        display:flex;
+        height:50px;
+        width:50px;
+    }
+
 
 }
 
@@ -125,17 +144,9 @@ label.Loupe i {
     display:inline-flex;
 }
 
-@media all and (max-width: 768px)
-{
-    .filters {
-        flex-direction: column;
-    }
-}
 
 
 .filters h2{
-    /* display: flex;
-    align-items: flex-start; */
     margin-right:20px;
     border-style:none;
 }
@@ -146,7 +157,7 @@ label.Loupe i {
     align-items: center;
     flex-wrap: wrap;
 }
-.search-filters a h3{
+.search-filters a h2{
     margin:0;
 }
 .search-filters a:hover {
@@ -183,7 +194,7 @@ label.Loupe i {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
-  
+    
 }
 .fa-info {
     color:#0065FC;
@@ -198,4 +209,27 @@ label.Loupe i {
     border-radius: 50%;
     border: 1px solid #D6D6D6;
     margin-right:5px;
+}
+
+
+@media all and (max-width: 767px)
+{
+    .filters {
+        width:100%;
+        flex-direction: column;
+    }
+
+    .search-filters{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 15%;
+        min-width: 80%;
+        height:200px;
+
+}
+
+    .search-filters-items{
+        margin-bottom:20px;
+    }
 }
