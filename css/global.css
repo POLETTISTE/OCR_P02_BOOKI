@@ -3,6 +3,7 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     font-weight: 500;
+    margin:0;
 }
 
 h1{
@@ -10,19 +11,20 @@ h1{
     font-weight: 700;
 }
 
+
 h2{
     font-size:19px;
     font-weight: 700;
 }
 
 h3{
-    font-size:15px;
+    font-size:14px;
     font-weight: 500;
     
 }
 
 p{
-    font-size: 14px;
+    font-size: 13px;
     font-weight:300;
 }
 
@@ -37,6 +39,38 @@ ul {
     list-style-type: none;
 }
 
-.fa-star{
-    font-size: 12px;
-}
+
+@media all and (max-width: 767px) {
+    h1{
+        font-size:34px;
+        font-weight: 500;
+    }
+    
+    
+    h2{
+        font-size:28px;
+        font-weight: 500;
+    }
+    
+    h3{
+        font-size:24px;
+        font-weight: 500;
+        
+    }
+    
+    p{
+        font-size: 20px;
+        font-weight:300;
+    }
+    
+    a, a:hover, a:visited {
+        text-decoration:none;
+        color:black;
+        font-size:20px;
+        font-weight:300;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    

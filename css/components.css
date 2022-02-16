@@ -5,8 +5,18 @@
     box-shadow: 0px 1px 6px rgb(100,100,100);
 }
 
-.card a:hover{
+ a,
+ a div{
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+
+a:hover,
+a:hover div{
     color:#0065FC;
+    transform: scale(1.01);
+
 }
 
 .blue-star {

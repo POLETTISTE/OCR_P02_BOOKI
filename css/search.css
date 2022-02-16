@@ -3,7 +3,21 @@
     width: 95%;
     margin:0 auto;
 }
+@media all and (max-width: 767px) {
+    .search{
+        margin-top:40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 
+    .search h1{
+        margin-bottom: 15px;
+    }
+
+    .search p{
+        margin-bottom: 40px;
+    }
+}
 
 .search-bar{
     width: 100%;
