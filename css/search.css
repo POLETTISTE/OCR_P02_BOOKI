@@ -1,8 +1,9 @@
 /* SEARCH-BAR */
-.search, .filters{
+.search{
     width: 95%;
     margin:0 auto;
 }
+
 .search-bar{
     width: 100%;
     margin: 0;
@@ -20,26 +21,26 @@
     margin-bottom:30px;
 }
 .fa-location-dot {
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     border:1px solid #F2F2F2;
     background-color: #F2F2F2;
-    width:50px;
-    height:50px;
+    width:30px;
+    height:40px;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
     padding:10px;
 }
 
 .search-bar input {
-    border-top: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     border-left:none;
     border-right:none;
-    padding-left: 14px ;
+    padding-left: 10px ;
 }
 
 .search-bar input:focus{
@@ -49,12 +50,14 @@
 
 .search-bar input::placeholder {
     color:black;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
 
 }
 
 .search-bar label.Recherche {
+    font-size: 13px;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +65,8 @@
     color:white;
     border-top-right-radius:10px;
     border-bottom-right-radius:10px;
-    width:120px;
-    padding:10px;
+    width:100px;
+    padding:8px;
     cursor:pointer;
 
 }
@@ -83,8 +86,8 @@ label.Loupe i {
     align-items: center;
     background-color: #0065FC;
     color:white;
-    height:50px;
-    width:50px;
+    height:40px;
+    width:40px;
     cursor:pointer;
     border-radius:10px;
     border-color: #0065FC;
@@ -119,7 +122,7 @@ label.Loupe i {
 
 
 .filters h2{
-    margin-right:30px;
+    margin-right:20px;
     border-style:none;
 }
 .search-filters {
@@ -138,39 +141,45 @@ label.Loupe i {
 
 .search-filters-item {
     display: flex;
-    height:50px;
+    height:40px;
     justify-content:flex-start;
     align-items:center;
-    border:4px solid #F2F2F2;
+    border:3px solid #F2F2F2;
     border-left:none;
     border-radius: 30px;
-    margin-right: 80px;
-    padding-right:20px;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-right:10px;
+    margin-bottom: 10px;
 }
 
 .search-filters-item .icone{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     color:#0065FC;
     background-color:#DEEBFF;
     border-radius: 50%;
     margin-right: 10px;
 }
 
+
+.filter-info{
+    text-align: center;
+  
+}
 .fa-info {
     color:#0065FC;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
+    padding:5px;
     width:25px;
     height:25px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 2px solid #D6D6D6;
-    margin-right: 8px;
+    border: 1px solid #D6D6D6;
+    margin-right:5px;
 }

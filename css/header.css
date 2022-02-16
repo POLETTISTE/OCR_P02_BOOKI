@@ -7,8 +7,8 @@ header {
     margin:auto 0;
     height:80px;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 @media all and (max-width: 768px)
@@ -17,7 +17,7 @@ header {
         flex-direction: column;
         justify-content:space-between;
         align-items: center;
-        height:130px;
+        /* height:130px; */
     }
 }
 
@@ -27,15 +27,15 @@ header {
 #logo{
     display: flex;
     margin:auto 0;
-    width:100px;
+    margin-left:35px;
+    width:80px;
     height:auto;
-    margin-left: 10px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    width:220px;
+    width:180px;
 
     
 }
