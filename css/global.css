@@ -6,31 +6,37 @@
 }
 
 h1{
+    font-size:20px;
     font-weight: 700;
-
 }
 
 h2{
-    
+    font-size:18px;
 }
 
 h3{
+    font-size:14px;
+    font-weight: 700;
     
 }
 
 p{
-  
+    font-size: 12px;
     font-weight:300;
 }
 
 a, a:hover, a:visited {
     text-decoration:none;
     color:black;
-
+    font-size:14px;
     font-weight:300;
 
 }
 
 ul {
     list-style-type: none;
+}
+
+.fa-star{
+    font-size: 12px;
 }

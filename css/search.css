@@ -4,6 +4,7 @@
     margin:0 auto;
 }
 
+
 .search-bar{
     width: 100%;
     margin: 0;
@@ -50,13 +51,13 @@
 
 .search-bar input::placeholder {
     color:black;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 700;
 
 }
 
 .search-bar label.Recherche {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -106,11 +107,8 @@ label.Loupe i {
 }
 
 /* SEARCH-FILTERS */
-
-.filters, .filters p {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+.filters {
+    display:inline-flex;
 }
 
 @media all and (max-width: 768px)
@@ -122,7 +120,9 @@ label.Loupe i {
 
 
 .filters h2{
-    margin-right:20px;
+    /* display: flex;
+    align-items: flex-start; */
+    margin-right:30px;
     border-style:none;
 }
 .search-filters {
@@ -131,9 +131,10 @@ label.Loupe i {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
 }
-
+.search-filters a h3{
+    margin:0;
+}
 .search-filters a:hover {
     background-color: #0065FC;
     color:white;
@@ -149,7 +150,6 @@ label.Loupe i {
     border-radius: 30px;
     margin-right: 20px;
     padding-right:10px;
-    margin-bottom: 10px;
 }
 
 .search-filters-item .icone{
@@ -167,6 +167,8 @@ label.Loupe i {
 
 .filter-info{
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
   
 }
 .fa-info {

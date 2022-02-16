@@ -1,5 +1,6 @@
 footer {
     width:100%;
+    margin: 0px;
     background-color: #F2F2F2;
     display: inline-flex;
     justify-content: flex-start;
@@ -9,5 +10,5 @@ footer {
 }
 
 .footer-list {
-    width:510px;
+    width:33%;
 }
