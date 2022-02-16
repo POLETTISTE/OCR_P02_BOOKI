@@ -18,7 +18,7 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
 }
 
 #location,
@@ -57,7 +57,7 @@ main {
 
 /* hébergements à Marseille */
 .location-title {
-    margin-left:30px;
+    margin-left:3%;
 }
 
 .location-grid{
@@ -70,7 +70,7 @@ main {
 
 .location-grid a{
     width:33%;
-    padding: 15px;
+    padding: 4%;
 }
 @media all and (max-width:767px){
     .location-grid a{
@@ -95,27 +95,27 @@ main {
 .location-card-description {
     width:100%;
     height:100%;
-    margin-left:7px;
+    margin-left:2%;
 }
 
 .location-card-description h3,
 .location-card-description p{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 
 
 .location-card-stars {
     width:50%;
-    margin-left:7px;
+    margin-left:2%;
 }
 
 /* Voir plus */
 .location-more {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left:30px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left:4%;
 }
 
 /* POPULAR */
@@ -123,7 +123,7 @@ main {
  #popular {
     width:32%;
     min-height:550px;
-    margin:0;
+    margin:0%;
 }
 
 .popular-grid{
@@ -136,13 +136,13 @@ main {
 }
 .popular-grid a{
     width:90%;
-    padding: 15px;
+    padding: 3%;
 }
 
 @media all and (max-width:767px){
     #popular {
         width:100%;
-        margin:0;
+        margin:0%;
     }
     
 }
@@ -152,8 +152,8 @@ main {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 6%;
+    margin-right: 6%;
 
 }
 
@@ -195,16 +195,21 @@ main {
 .popular-card-description h3,
 .popular-card-description p{
     margin:0;
-    margin-left: 12px;
+    margin-left: 3%;
 }
 
 .popular-card-stars {
-    margin-left:15px;
+    margin-left:3%;
 } 
 
 /* ACTIVITIES */
 #activities{
-    margin-bottom: 50px;
+    height:auto;
+    margin-bottom:5%;
+}
+
+#activities h2{
+    margin-bottom: 3%;
 }
 .activities-grid{
     width:100%;
@@ -253,7 +258,7 @@ main {
     width: 100%;
     height:180px;
     margin:0;
-    margin-bottom:38px;
+    margin-bottom:20%;
     
 }
 

@@ -14,6 +14,8 @@
     display:flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top:15px;
+    margin-bottom:15px;
     
 }
 
@@ -211,25 +213,3 @@ label.Loupe i {
     margin-right:5px;
 }
 
-
-@media all and (max-width: 767px)
-{
-    .filters {
-        width:100%;
-        flex-direction: column;
-    }
-
-    .search-filters{
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding-left: 15%;
-        min-width: 80%;
-        height:200px;
-
-}
-
-    .search-filters-items{
-        margin-bottom:20px;
-    }
-}
