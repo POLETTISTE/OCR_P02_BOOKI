@@ -73,6 +73,14 @@ main {
     width:30%;
     margin:1%;
 }
+
+@media all and (min-width:768px) and (max-width:991px){
+    .location-grid a{
+        width:40%;
+        margin:1%;
+    }
+}
+
 @media all and (max-width:767px){
     .location-grid a{
         width:90%;
