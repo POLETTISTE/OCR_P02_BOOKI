@@ -15,10 +15,10 @@ main {
 
 #location-popular {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items:flex-end;
     flex-wrap: wrap-reverse;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 #location,
@@ -44,7 +44,7 @@ main {
 
 #location {
     width: 66%;
-    min-height:550px;
+
     margin:0;
 }
 
@@ -57,12 +57,13 @@ main {
 
 /* hébergements à Marseille */
 .location-title {
+    margin-top: 3%;
     margin-left:3%;
+    margin-bottom: 2%;
 }
 
 .location-grid{
     width:100%;
-    margin-top:3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -70,7 +71,7 @@ main {
 }
 
 .location-grid a{
-    width:30%;
+    width:28%;
     margin:1%;
 }
 
@@ -91,19 +92,28 @@ main {
 
  .location-card {
     width:100%;
-    height:auto;
+    height:200px;
 }
 
 .location-card-img {
     width:100%;
-    height:100px;
+    height:120px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit:cover;
 }
 .location-card-description {
     width:100%;
-    height:100%;
+    margin-left:3%;
+}
+
+.location-card-description h3,
+.location-card-description p{
+    margin-bottom: 2%;
+}
+
+.location-card-stars {
+    width:50%;
     margin-left:2%;
 }
 
@@ -116,39 +126,26 @@ main {
         height:240px;
     }
 }
-.location-card-description h3,
-.location-card-description p{
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
 
 
-
-.location-card-stars {
-    width:50%;
-    margin-left:2%;
-}
-
-/* Voir plus */
+/* Afficher plus */
 #location > a  {
     display: flex;
-    justify-content: center;
-    width:15%;
-    margin-top:5%;
+    justify-content: flex-start;
     margin-left:3%;
+    margin-top:2%;
+    padding-bottom: 3%;
 }
 
 /* POPULAR */
 
  #popular {
     width:32%;
-    min-height:550px;
     margin:0%;
 }
 
 .popular-grid{
     width:100%;
-    margin-top:8%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -176,6 +173,8 @@ main {
     justify-content: space-between;
     margin-left: 6%;
     margin-right: 6%;
+    margin-top: 3%;
+    margin-bottom: 9%;
 
 }
 
@@ -188,7 +187,8 @@ main {
 
 /* carte populaire */
 .popular-card {
-    width:100%;
+    width:90%;
+    margin:0 auto;
 
 }
 .popular-card{
@@ -219,6 +219,7 @@ main {
 .popular-card-description p{
     margin:0;
     margin-left: 3%;
+    margin-bottom: 2%;
 }
 
 .popular-card-stars {
@@ -232,131 +233,126 @@ main {
         width:40%;
         height:250px;
     }
-
+    
     .popular-right-menu{
         width:60%;
         height:250px;
     }
-
+    
 }
 /* ACTIVITIES */
 #activities{
-    height:auto;
-    margin-bottom:5%;
+    padding-bottom:5%;
 }
 
-#activities h2{
-    margin-bottom: 3%;
+.activities-title{
+    margin-left:1.5%;
+    margin-bottom: 2%;
 }
+@media all and (max-width:767px){
+    .activities-title {
+        margin-left: 5%;
+    }
+}
+
+/* ACTIVITIES GRID */
+
 .activities-grid{
-    width:100%;
-    min-height:400px;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.single,
+.couple{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:23%;
+    height:600px;
 }
 
-@media all and (max-width:767px){
-    .activities-grid{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-/* columns of activities
- */
-.activities-grid a{
-    width:22%;
-    height:400px;
-    margin:0;
-}
-
-.activities-card-medium {
-    width:22%;
-    height:400px;
-    margin:0;
-}
-
-@media all and (max-width:767px){
-    .activities-grid a,
-    .activities-card-medium{
-        width:90%;
-        height:auto;
-        margin-bottom:30px;
-    }
-}
-
-/* large card with one picture */
+/* Activities large card */
 .activities-card-large-item{
-    width:100%;
-    height:400px;
+    height:535px;
 }
 
 .activities-card-large-item img{
-    width:100%;
-    height:350px;
+    width: 100%;
+    height:90%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+
+/* Activities medium card */
+.activities-card-medium-item{
+    height:300px;
+}
+.activities-card-medium-item img{
+    width: 100%;
+    height:83%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* Activities small card */
+.activities-card-small-item{
+    height:200px;
+}
+.activities-card-small-item img{
+    width: 100%;
+    height:73%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+@media all and (min-width:768px) and (max-width:991px){
+    .single,
+    .couple{
+        width:45%;
+}
+    .couple{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
 
 @media all and (max-width:767px){
-    .activities-card-large-item{
-      height:400px;
-      margin-top:0px;
-    }
-    .activities-card-large-item img{
-    height:300px;
-    }
-
-}
-
-
-/* medium card with 2 pictures */
-
-.activities-card-medium a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-evenly;
-    width: 100%;
-    height:180px;
-    margin:0;
-    margin-bottom:20%;
-    
-}
-
-.activities-card-medium-item img{
-    width:100%;
-    height:130px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-@media all and (max-width:767px) {
-
-    .activities-card-medium{
-        margin-bottom:0px;
-    }
-
-    .activities-card-medium a{
+    .single,
+    .couple{
+        display: block;
         width:100%;
-        height:auto;
-        margin-bottom:25px;
-    }
-
-    .activities-card-medium-item{
-        height:400px;
-    }
-
-    .activities-card-medium-item img{
-        height:300px;
-    }
+        height: auto;
 }
+.activities-card-large-item,
+.activities-card-medium-item,
+.activities-card-small-item{
+    width:90%;
+    height:350px;
+    margin:0 auto;
+    margin-bottom:4%;
+}
+.activities-card-large-item img,
+.activities-card-medium-item img,
+.activities-card-small-item img{
+    width:100%;
+    height:285px;
+}
+
+
+
+}
+
+
 
 /* description activities */
 
