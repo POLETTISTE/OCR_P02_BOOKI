@@ -318,11 +318,7 @@ flex-wrap: wrap;
     .couple{
         width:45%;
 }
-    .couple{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+
 }
 
 
