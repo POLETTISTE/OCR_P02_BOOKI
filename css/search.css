@@ -43,8 +43,10 @@
     margin: 0;
     margin-bottom:30px;
 }
+
 .fa-location-dot {
-    font-size: 15px;
+    text-align: center;
+    font-size:16px;
     color: black;
     display: flex;
     align-items: center;
@@ -122,9 +124,9 @@ label.Loupe i {
         font-size:30px;
         width:90px;
         height:80px;
-        padding:10px;
         border-top-left-radius:15px;
         border-bottom-left-radius:15px;
+        padding: 20px;
     }
 
     #Recherche{
@@ -212,11 +214,13 @@ align-items: center;
 
 
 .search-filters-item .icone{
+    position:relative;
+    right:5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:45px;
-    height:45px;
+    width:48px;
+    height:48px;
     color:#0065FC;
     background-color:#DEEBFF;
     border-radius: 50%;
@@ -253,11 +257,12 @@ align-items: center;
 
 .fa-info {
     color:#0065FC;
-    font-size: 16px;
+    text-align: center;
+    font-size: 14px;
     font-weight: bold;
     padding:5px;
-    width:35px;
-    height:35px;
+    width:30px;
+    height:30px;
     display: flex;
     justify-content: center;
     align-items: center;

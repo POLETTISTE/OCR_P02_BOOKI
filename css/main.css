@@ -182,7 +182,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
+    font-size: 24px;
 }
 
 /* carte populaire */
@@ -193,7 +193,7 @@ main {
 }
 .popular-card{
     display: flex;
-    align-items: space-evenly;
+    align-items: center;
     justify-content: center;
     
 }
