@@ -59,7 +59,7 @@
     height:50px;
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
-    padding:10px;
+    padding:15px;
 }
 
 .search-bar input {
@@ -183,8 +183,9 @@ width:100%;
 }
 
 .filters h2{
+    font-size:19px;
+    margin:12px;
     margin-right:30px;
-    margin-left:12px;
     border-style:none;
 }
 .search-filters {
@@ -207,7 +208,7 @@ width:100%;
 
 .search-filters-item {
     display: flex;
-    height:60px;
+    height:45px;
     justify-content:flex-start;
     align-items:center;
     border:3px solid #F2F2F2;
@@ -226,8 +227,8 @@ width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:60px;
-    height:60px;
+    width:45px;
+    height:45px;
     color:#0065FC;
     background-color:#DEEBFF;
     border-radius: 50%;
@@ -236,7 +237,7 @@ width:100%;
 @media all and (max-width:991px){
     .filters h2{
         margin:0;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .search-filters-item{
         margin-bottom:20px;
