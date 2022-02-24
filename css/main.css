@@ -1,16 +1,35 @@
 /* MAIN */
 main {
-    width: 95%;
+    width: 100%;
     margin:0 auto;
-
 }
+
+#location-popular {
+    width:95%;
+    margin:0 auto;
+}
+@media all and (max-width:767px){
+    #location-popular{
+        width: 100%;
+        margin:0 auto;
+    }
+}
+
+#activities {
+    width:95%;
+    margin:0 auto;
+}
+
 
 @media all and (max-width:767px){
     main {
         width:100%;
         margin:0;
     }
-    
+    #activities{
+        width:100%;
+        margin:0;
+    }
 }
 
 #location-popular {
@@ -18,7 +37,7 @@ main {
     justify-content: space-between;
     align-items:flex-end;
     flex-wrap: wrap-reverse;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
 }
 
 #location,
@@ -28,6 +47,7 @@ main {
     margin-bottom: 50px;
     padding-top: 20px;
 }
+
 @media all and (max-width:767px){
     #location,
     #popular {
@@ -44,10 +64,15 @@ main {
 
 #location {
     width: 66%;
-
+    min-height:600px;
     margin:0;
 }
-
+@media all and (min-width:768px) and (max-width:991px){
+    #location{
+        width:65%;
+        min-height: 700px;
+    }
+}
 @media all and (max-width:767px){
     #location {
         width:100%;
@@ -60,7 +85,14 @@ main {
     margin-top: 2%;
     margin-left:3%;
     margin-bottom: 2%;
+    padding-left: 1%;
 }
+@media all and (max-width:767px){
+    .location-title {
+        margin-bottom: 4%;
+    }
+}
+
 
 .location-grid{
     width:100%;
@@ -71,14 +103,20 @@ main {
 }
 
 .location-grid a{
-    width:28%;
+    width:30%;
     margin:1%;
 }
 
 @media all and (min-width:768px) and (max-width:991px){
+
+    .location-grid{
+        height:720px;
+        align-items: flex-start;
+    }
+
     .location-grid a{
         width:40%;
-        margin:1%;
+        margin:0%;
     }
 }
 
@@ -92,38 +130,64 @@ main {
 
  .location-card {
     width:100%;
-    height:200px;
+
 }
 
 .location-card-img {
     width:100%;
-    height:120px;
+    height:100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit:cover;
 }
 .location-card-description {
     width:100%;
-    padding-left:3%;
+    padding-left:5%;
 }
 
 .location-card-description h3,
-.location-card-description p{
+.location-card-description h4{
     margin-bottom: 2%;
+    margin-top:3%;
 }
 
 .location-card-stars {
     width:50%;
-    margin-left:2%;
+    padding-left:5%;
+    display: inline-flex;
+    justify-content: flex-start;
 }
-
+@media all and (min-width:768px) and (max-width:991px) {
+    .location-card{
+        min-height:200px;
+    }
+}
 @media all and (max-width:767px){
 
     .location-card{
-        height:400px;
+        height:390px;
+        margin-bottom: 2%;
     }
     .location-card-img{
-        height:240px;
+        height:68%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        
+    }
+    .location-card-description {
+        padding-left:4%;
+    }
+    .location-card-description h3{
+        margin:0;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .location-card-description h4{
+        margin:0;
+        margin-bottom: 1%;
+    }
+    .location-card-stars {
+        margin:0;
     }
 }
 
@@ -137,10 +201,24 @@ main {
     padding-bottom: 3%;
 }
 
+.location-more{
+    margin-top:2%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+}
+@media all and (max-width:767px) {
+    .location-more{
+        font-size: 28px;
+        padding-left: 2%;
+    }
+}
+
+
 /* POPULAR */
 
  #popular {
     width:32%;
+    min-height:600px;
     margin:0%;
 }
 
@@ -153,17 +231,34 @@ main {
     flex-wrap: wrap;
 }
 .popular-grid a{
-    width:90%;
+    width:80%;
     margin-bottom:8%;
 
+}
+
+@media all and (min-width:768px) and (max-width:991px){
+
+    #popular{
+        width:33%;
+    }
+    .popular-grid a{
+        width: 95%;
+    }
 }
 
 @media all and (max-width:767px){
     #popular {
         width:100%;
+        padding-bottom: 5%;
         margin:0%;
+        margin-bottom: 3%;
+        min-height: none;
     }
+    .popular-grid a{
+        width:90%;
+        margin-bottom:3%;
     
+    }
 }
 
 /* Les plus populaires */
@@ -171,10 +266,10 @@ main {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 9%;
+    margin-right: 9%;
     margin-top: 3%;
-    margin-bottom: 9%;
+    margin-bottom: 7%;
 
 }
 
@@ -182,28 +277,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+@media all and (max-width:767px){
+    .popular-title{
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    .fa-chart-line {
+        font-size: 35px;
+    }
 }
 
 /* carte populaire */
 .popular-card {
     width:100%;
     margin:0 auto;
-
-}
-.popular-card{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
+
 .popular-card-img{
     width:40%;
     height:120px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     object-fit:cover;
-
 }
 
 .popular-right-menu{
@@ -211,51 +310,60 @@ main {
     height:120px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 6%;
+    margin-right: 4%;
+
 }
 
 
 .popular-card-description h3,
-.popular-card-description p{
+.popular-card-description h4{
     margin:0;
-    margin-left: 3%;
     margin-bottom: 2%;
+    margin-top:7% ;
 }
 
 .popular-card-stars {
-    margin-left:3%;
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom:5%;
 } 
 
 @media all and (max-width:767px){
 
+    .popular-card{
+        width: 100%;
+    }
 
     .popular-card-img{
-        width:40%;
-        height:250px;
+        width:35%;
+        height:190px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
     
     .popular-right-menu{
-        width:60%;
-        height:250px;
+        width:65%;
+        height:190px;
+        padding-right: 60px;
     }
-    
 }
 /* ACTIVITIES */
 #activities{
-    padding-bottom:5%;
+    padding-bottom:1%;
 }
 
-.activities-title{
-    margin-left:1.5%;
-    margin-bottom: 2%;
-}
 @media all and (max-width:767px){
     .activities-title {
         margin-left: 5%;
+        margin-bottom:5%;
     }
 }
 
-/* ACTIVITIES GRID */
+/* Activities grid */
 
 .activities-grid{
 display: flex;
@@ -285,7 +393,6 @@ flex-wrap: wrap;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
 
 /* Activities medium card */
 .activities-card-medium-item{
@@ -328,32 +435,40 @@ flex-wrap: wrap;
         display: block;
         width:100%;
         height: auto;
+    }
+    .activities-card-large-item,
+    .activities-card-medium-item,
+    .activities-card-small-item{
+        width:90%;
+        height:340px;
+        margin:0 auto;
+        margin:4%;
+    }
+    .activities-card-large-item img,
+    .activities-card-medium-item img,
+    .activities-card-small-item img{
+        width:100%;
+        height:78%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .activity-card{
+        border:none;
+    }
 }
-.activities-card-large-item,
-.activities-card-medium-item,
-.activities-card-small-item{
-    width:90%;
-    height:350px;
-    margin:0 auto;
-    margin-bottom:4%;
-}
-.activities-card-large-item img,
-.activities-card-medium-item img,
-.activities-card-small-item img{
-    width:100%;
-    height:285px;
-}
-
-
-
-}
-
-
 
 /* description activities */
 
 .title-activity{
-    padding-left:7px;
-    margin:0;
-    margin-top:10px;
+    object-fit: contain;
+    margin-top:6%;
+    padding-left:5%;
+}
+@media all and (max-width:767px) {
+    .title-activity{
+        margin:0;
+        margin-top:2%;
+        margin-bottom: 4%;
+    }
 }
