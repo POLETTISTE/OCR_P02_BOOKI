@@ -473,7 +473,7 @@ flex-wrap: wrap;
 /* description activities */
 
 .title-activity{
-    margin-top:7%;
+    margin-top:5%;
     padding-left:5%;
 }
 @media all and (max-width:767px) {
