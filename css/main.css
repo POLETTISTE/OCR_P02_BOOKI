@@ -360,6 +360,8 @@ main {
 
 .activities-title {
     margin-left:0.3%;
+    position: relative;
+    top:10px;
 }
 
 @media all and (max-width:767px){
