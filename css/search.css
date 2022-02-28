@@ -199,6 +199,8 @@ width:100%;
     background-color: #0065FC;
     color:white;
     border:3px solid #0065FC;
+    border-left:none;
+    transform: none;
 }
 
 .search-filters-item {
